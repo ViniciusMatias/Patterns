@@ -1,3 +1,3 @@
 # Patterns
 
-Exemplos de padrões com utilizando java.
+Exemplos de padrões de projeto utilizando java.
