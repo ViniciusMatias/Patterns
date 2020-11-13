@@ -1,17 +1,18 @@
 package Criacao.Factory_Method;
 
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
 import java.util.Calendar;
 
 public abstract  class Passagem {
 
     private String origem;
     private String destino;
-    private Calendar dataHoraDaPartida;
+    private String dataHoraDaPartida;
 
-    protected SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy HH:mm");
 
-    public Passagem(String origem, String destino, Calendar dataHoraDaPartida) {
+
+    public Passagem(String origem, String destino, String dataHoraDaPartida) {
         this.origem = origem;
         this.destino = destino;
         this.dataHoraDaPartida = dataHoraDaPartida;
@@ -33,11 +34,11 @@ public abstract  class Passagem {
         this.destino = destino;
     }
 
-    public Calendar getDataHoraDaPartida() {
+    public String getDataHoraDaPartida() {
         return dataHoraDaPartida;
     }
 
-    public void setDataHoraDaPartida(Calendar dataHoraDaPartida) {
+    public void setDataHoraDaPartida(String dataHoraDaPartida) {
         this.dataHoraDaPartida = dataHoraDaPartida;
     }
     public abstract  void detalhes();
