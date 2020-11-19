@@ -11,9 +11,6 @@ public class FactoryMethod {
     public static void main(String[] args) {
         String dataDeAgora = LocalDateTime.now().format(DateTimeFormatter.ofPattern("d/M/y h:mm:s"));
 
-
-
-
         Empresa empresaOnibusUrbano = new EmpresaOnibusUrbano();
         Passagem passagemUrbano = empresaOnibusUrbano.emitirPassagem("Guarabira", "Rio tinto",dataDeAgora );
         passagemUrbano.detalhes();
@@ -21,11 +18,6 @@ public class FactoryMethod {
         Empresa empresaInterestadual = new EmpresaOnibusInterestadual();
         Passagem passagemInterestadual = empresaInterestadual.emitirPassagem("Guarabira", "Recife",dataDeAgora );
         passagemInterestadual.detalhes();
-
-
-
-
-
 
     }
 }
