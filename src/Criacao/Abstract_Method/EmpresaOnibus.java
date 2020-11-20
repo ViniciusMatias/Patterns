@@ -1,8 +1,6 @@
 package Criacao.Abstract_Method;
 
-public interface EmpresaOnibus {
-
-    public String emitirPassagemOnibusUrbano();
-    public String emitirPassagemOnibusInterestadual();
-
+public abstract class EmpresaOnibus {
+    public  abstract PassagemOnibusUrbana emitirPassagemOnibusUrbano(String origem, String destino, String dataHora);
+    public  abstract PassagemOnibusInterestadual emitirPassagemOnibusInterestadual(String origem, String destino, String dataHora);
 }
